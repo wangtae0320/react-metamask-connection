@@ -5,9 +5,10 @@ interface IButtonProps {
   children?: React.ReactNode;
   props?: any;
   onClick?: any;
+  style?: any;
 }
 
-const Button: React.FC<IButtonProps> = ({ onClick, children, ...props }) => {
+const Button: React.FC<IButtonProps> = ({ style, onClick, children, ...props }) => {
   return (
     <StyledButton {...props} onClick={onClick}>
       {children}
